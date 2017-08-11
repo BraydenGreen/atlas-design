@@ -1,2 +1,8 @@
-<h1>Blogs#index</h1>
-<p>Find me in app/views/blogs/index.html.erb</p>
+<h1> Blogs Page </h1>
+<p><%= link_to 'New Blog', new_blog_path %></p>
+
+<% @blogs.each do |blog| %>
+  <h2><%= blog.title %></h2>
+  <p><%= blog.body %></p>
+  <%= link_to 'Show blog', blog_path(blog) %>
+<% end %>

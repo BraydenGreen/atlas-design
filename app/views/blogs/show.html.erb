@@ -1,2 +1,5 @@
-<h1>Blogs#show</h1>
-<p>Find me in app/views/blogs/show.html.erb</p>
+<h1> blogs show page </h1>
+<h2><%= @blog.title %></h2>
+<h3><%= @blog.author %></h2>
+<p><%= @blog.body %></p>
+<%= link_to 'Back', blogs_path %>
